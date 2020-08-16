@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Word Guesser</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="main-heading">
+				WordEr
+				<span class="subtitle">Try to guess the word</span>
+			</h1>
+
+			<div class="word-info">
+				<div class="word-hints">
+					<h2>Hints</h2>
+
+					<p>
+						&check; The word is made of
+						<span class="word-length"></span>
+					</p>
+
+					<p>&check; The word is composed of these letters</p>
+					<div class="word-hint-fields"></div>
+				</div>
+
+				<div class="timer">
+					<p class="timer__text">
+						<span class="timer__seconds"></span> second(s) left
+					</p>
+					<p class="result"></p>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section>
+				<form>
+					<div class="user-fields"></div>
+					<button class="btn-submit" type="submit">Confirm</button>
+				</form>
+			</section>
+		</main>
+
+		<script src="js/app.js"></script>
+	</body>
+</html>

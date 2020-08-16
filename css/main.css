@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.5rem;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	height: 100vh;
+	width: 85vw;
+	max-width: 120rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 800;
+}
+
+.main-heading {
+	font-size: 6rem;
+	margin-bottom: 5rem;
+}
+
+.subtitle {
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+main {
+	max-width: inherit;
+}
+
+.word-info {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 2rem;
+}
+
+.word-info h2,
+.timer {
+	margin-top: 0;
+}
+
+.timer__text {
+	font-weight: 800;
+	color: #090b24;
+}
+
+.timer__seconds {
+	font-size: 2rem;
+}
+
+.word-info {
+	margin-bottom: 8rem;
+}
+
+.word-hint-fields {
+	margin-left: 1rem;
+}
+
+.word-hint-fields__input {
+	background: none;
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	outline: none;
+	border: none;
+	color: #3a47cf;
+	max-width: 3rem;
+}
+
+.user-fields {
+	display: flex;
+	max-width: 100%;
+	margin-bottom: 5rem;
+}
+
+.user-fields__input {
+	font-size: 4rem;
+	font-weight: 600;
+	padding-bottom: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+	outline: none;
+	border-width: 0 0 0.3rem 0;
+	border-color: #dee0f7;
+	color: #3a47cf;
+	max-width: 6rem;
+}
+
+.user-fields__input:focus {
+	border-color: #3a47cf;
+	transition: all 0.4s ease-out;
+}
+
+.user-fields__input:not(:last-child) {
+	margin-right: 1.5rem;
+}
+
+.btn-submit {
+	border: none;
+	padding: 1.5rem 3rem;
+	border-radius: 0.3rem;
+	background: #dee0f7;
+	color: #3a47cf;
+	font-size: 1.5rem;
+	font-weight: 600;
+	cursor: pointer;
+	outline: none;
+}
+
+.btn-submit:hover {
+	background: #3a47cf;
+	color: #dee0f7;
+	transition: all 0.3s ease-out;
+}
+
+.btn-submit:disabled {
+	background: #dee0f7;
+	color: #b5baed;
+	cursor: default;
+}
+
+.result {
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.success {
+	color: #232d91;
+}
+
+.failed {
+	color: #232d91;
+}
